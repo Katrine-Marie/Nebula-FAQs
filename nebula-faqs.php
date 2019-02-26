@@ -2,12 +2,12 @@
 /**********
 * Plugin Name: Nebula FAQs
 * Plugin URI: https://github.com/Katrine-Marie/Nebula-FAQs
-* Description: Add FAQ posts to an info accordion
+* Description: Add FAQ posts to an info accordion, whish can be inserted into a post or page with a shortcode.
 * Version: 1.0.0
 * Author: Katrine-Marie Burmeister
 * Author URI: https://fjordstudio.dk
-* License: GPL-2.0+
-License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+* License:     GNU General Public License v3.0
+* License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
 namespace nebula\faqs;
