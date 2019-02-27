@@ -22,6 +22,18 @@ include_once(nebula_faqs_DIR . 'init/faq-posttype.php');
 $mystart = new InitializePlugin();
 
 
+function launch () {
+
+  global $pagenow, $post_type;
+
+  $my_post_type = new faq_post_type();
+
+  if(!is_admin()) {
+    include (nebula_faqs_DIR . '/user/class-faq-shortcode.php');
+    $run_user = new user_faq();
+  }
+}
+launch();
 
 
 class InitializePlugin {
