@@ -10,7 +10,7 @@
 * License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
-namespace nebula\faqs;
+namespace nebula\faq;
 
 if(!defined('ABSPATH')){
 	exit('Go away!');
@@ -18,7 +18,7 @@ if(!defined('ABSPATH')){
 
 define('nebula_faqs_DIR', plugin_dir_path(__FILE__));
 
-
+include_once(nebula_faqs_DIR . 'init/faq-posttype.php');
 $mystart = new InitializePlugin();
 
 
