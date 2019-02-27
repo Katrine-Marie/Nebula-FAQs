@@ -17,3 +17,28 @@ if(!defined('ABSPATH')){
 }
 
 define('nebula_faqs_DIR', plugin_dir_path(__FILE__));
+
+
+$mystart = new InitializePlugin();
+
+
+
+
+class InitializePlugin {
+	public function __construct(){
+  	register_activation_hook( __FILE__, array($this, 'plugin_activated' ));
+    register_deactivation_hook( __FILE__, array($this, 'plugin_deactivated' ));
+    register_uninstall_hook( __FILE__, array($this, 'plugin_uninstall' ) );
+  }
+  public static function plugin_activated(){
+    $register_post_type = new faq_post_type();
+    $register_post_type->register_faq_post_type();
+    flush_rewrite_rules();
+  }
+  public function plugin_deactivated(){
+
+  }
+  public function plugin_uninstall() {
+
+  }
+}
