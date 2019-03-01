@@ -1,13 +1,6 @@
 <?php
-
-/*
-
- *
- *
- */
-
-function do_it_now() {
-    ?>
+  function do_it_now() {
+?>
 
 <h2>FAQ Page</h2>
 
