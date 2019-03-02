@@ -3,7 +3,7 @@
 * Plugin Name: Nebula FAQs
 * Plugin URI: https://github.com/Katrine-Marie/Nebula-FAQs
 * Description: Add FAQ posts to an info accordion, whish can be inserted into a post or page with a shortcode.
-* Version: 1.0.0
+* Version: 1.1.0
 * Author: Katrine-Marie Burmeister
 * Author URI: https://fjordstudio.dk
 * License:     GNU General Public License v3.0
@@ -20,6 +20,10 @@ define('nebula_faqs_DIR', plugin_dir_path(__FILE__));
 
 include_once(nebula_faqs_DIR . 'init/faq-posttype.php');
 $mystart = new InitializePlugin();
+
+// Welcome screen
+include_once nebula_faqs_DIR . 'init/admin_welcome.php';
+$welcome_page = new admin_welcome();
 
 
 function launch () {
